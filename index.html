@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;
+    400;500; 600; 700&family=Rokkitt:wght@600; 700&disp Lay=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["Mulish", "sans-serif"],
+            mono: ["Rokkitt", "monospace"],
+          },
+        },
+      };
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!--Background Container-->
+    <div class="flex items-center justify-center bg-rose-50 min-h-screen">
+      <!--Card Container-->
+      <div
+        class="relative flex flex-col rounded-2xl bg-white m-6 space-y-10 shadow-2xl md:space-y-0 md:m-0 md:flex-row md:space-y-0"
+      >
+        <!--Left Side-->
+        <div class="p-6 md:p-20">
+          <!--Top Content-->
+          <h2 class="font-mono text-4xl font-bold mb-5">Log In</h2>
+          <p
+            class="text-gray-600 max-w-small font-sans text-medium tracking-wide font-light mb-12"
+          >
+            Log in to your account to upload or download pictures, videos or
+            music.
+          </p>
+          <input
+            type="text"
+            placeholder="Enter your email address"
+            class="w-full p-6 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
+          />
+          <!--Middle Content-->
+          <div
+            class="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0"
+          >
+            <div class="font-thin text-cyan-700">Forgot password</div>
+            <button
+              class="w-full md:w-auto flex justify-center items-center p-6 space-x-4 font-sans font-bold text-white rounded-md shadow-lg px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150"
+            >
+              Next
+              <span class="ml-4"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-7"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <line x1="13" y1="18" x2="19" y2="12"></line>
+                  <line x1="13" y1="6" x2="19" y2="12"></line></svg
+              ></span>
+            </button>
+          </div>
+          <!--Border-->
+          <div class="mt-12 border border-b border-b-gray-300"></div>
+
+          <!--Bottom Content-->
+          <p class="py-6 text-sm text-center font-thin text-gray-400">
+            or log in with
+          </p>
+
+          <!--Bottom Buttons-->
+          <div
+            class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0"
+          >
+            <button
+              class="flex items-center justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2"
+            >
+              <img src="images/facebook.png" alt="" class="w-9" />
+              <span class="font-thin">Facebook</span>
+            </button>
+            <button
+              class="flex items-center justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2"
+            >
+              <img src="images/google.png" alt="" class="w-9" />
+              <span class="font-thin">Google</span>
+            </button>
+          </div>
+          <!--Right Side-->
+          <img
+            src="./images/image.jpg"
+            alt="waves"
+            class="w-[430px] hidden md:block"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
