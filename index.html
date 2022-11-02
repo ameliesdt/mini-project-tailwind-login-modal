@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;
-    400;500; 600; 700&family=Rokkitt:wght@600; 700&disp Lay=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
       rel="stylesheet"
     />
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: ["Mulish", "sans-serif"],
-            mono: ["Rokkitt", "monospace"],
-          },
-        },
-      };
-    </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            fontFamily: {
+              sans: ['Mulish', 'sans-serif'],
+              mono: ['Rokkitt', 'monospace'],
+            },
+          },
+        }
+
+      <script src="https://cdn.tailwindcss.com">
+    </script>
     <title>Login Modal</title>
   </head>
   <body>
@@ -35,7 +35,7 @@
           <!--Top Content-->
           <h2 class="font-mono text-4xl font-bold mb-5">Log In</h2>
           <p
-            class="text-gray-600 max-w-small font-sans text-medium tracking-wide font-light mb-12"
+            class="text-gray-600 max-w-sm font-sans text-medium tracking-wide font-light mb-12"
           >
             Log in to your account to upload or download pictures, videos or
             music.
@@ -97,12 +97,31 @@
               <span class="font-thin">Google</span>
             </button>
           </div>
-          <!--Right Side-->
-          <img
-            src="./images/image.jpg"
-            alt="waves"
-            class="w-[430px] hidden md:block"
-          />
+        </div>
+        <!--Right Side-->
+        <img
+          src="./images/image.jpg"
+          alt="waves"
+          class="w-[430px] hidden md:block"
+        />
+        <!--Close Button-->
+        <div
+          class="group absolute -top-5 right-4 flex items-center justify-center bg-gray-200 rounded-full w-10 h-10 hover:cursor-pointer hover:-translate-y-0.5 transition duration-150 md:top-4 md:bg-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
         </div>
       </div>
     </div>
